@@ -134,6 +134,8 @@ function buildBubble(){
 }
 
 function buildDemographics(){
+  
+  panel.html("")
 
   var dropdownMenuValue=d3.selectAll("#selDataset").node().value;
 
