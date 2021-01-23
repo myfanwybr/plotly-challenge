@@ -68,10 +68,9 @@ function buildBar(){
       var layout={
         // title:"new graph", 
         barmode: "stack",
-        xaxis: {title:'sample values'},
-        yaxis: {title:'otu id', 
+        xaxis: {title:'Sample Values'},
+        yaxis: {title:'OTU ID', 
         font: {
-          family: 'Courier New, monospace',
           size: 20,
           // color: 'black'
         }
@@ -123,17 +122,18 @@ function buildBubble(){
        height: 600,
        width: 900,
        font: {
-        family: 'Courier New, monospace',
         size: 18,
         color: 'black'
       },
       xaxis: {
         rangemode: 'tozero',
-        autorange: true
+        autorange: true, 
+        title: 'OTU ID'
       },
       yaxis: {
         rangemode: 'tozero',
-        autorange: true
+        autorange: true, 
+        title: 'Sample Values'
       }
       
     };
