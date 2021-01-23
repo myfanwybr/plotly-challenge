@@ -101,6 +101,8 @@ function buildBubble(){
     // console.log(otu_idStr)
     // console.log(sample_values)
 
+    console.log(filteredSamples)
+
     var trace1 = {
       x: otu_ids,
       y: sample_values,
@@ -124,7 +126,16 @@ function buildBubble(){
         family: 'Courier New, monospace',
         size: 18,
         color: 'black'
+      },
+      xaxis: {
+        rangemode: 'tozero',
+        autorange: true
+      },
+      yaxis: {
+        rangemode: 'tozero',
+        autorange: true
       }
+      
     };
     
     
