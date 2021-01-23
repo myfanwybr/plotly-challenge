@@ -148,13 +148,6 @@ function buildDemographics(){
       var p= panel.append("p")
       p.text(`${key}: ${value}`)
     })
-
-
-    // for (var [key, value] of Object.entries(filteredMetadata)) {
-    //   var p= panel.append("p")
-    //   p.text(`${key}: ${value}`);
-    // }
-
     
     })
   }
