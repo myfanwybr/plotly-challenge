@@ -10,4 +10,4 @@ Interactive button to select participant id:
 <img src="images/button.png">
 
 Plots
-<img src="images/plots.png"
+<img src="images/plots.png">
