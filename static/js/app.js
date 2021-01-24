@@ -3,13 +3,15 @@ var response =d3.json("data/samples.json").then(sample=>console.log(sample));
 var option=d3.select("option")
 var select=d3.select("select")
 var panel=d3.select(".panel-body")
-
+var text= d3.select("h4")
+text.html("")
 
 
 //Build drop down of ID's
 function buildButton(){
 
   option.html("")
+  
 
   d3.json("data/samples.json").then(function(data) {
 
@@ -41,7 +43,9 @@ function buildBar(){
   
   //pull value from drop down menu
   var dropdownMenuValue=d3.selectAll("#selDataset").node().value;
-  
+
+    
+    text.text(" Hover over an OTU ID to see the bacteria detected:")
     d3.json("data/samples.json").then(data=>{
 
       var samples=data.samples
