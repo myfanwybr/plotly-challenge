@@ -96,10 +96,6 @@ function buildBubble(){
     var sample_values=filteredSamples.sample_values
     var otu_labels=filteredSamples.otu_labels
 
-    // var otu_idStr= otu_ids.map(otu_ids=>"OTU "+ otu_ids.toString()).reverse()
-    // console.log(otu_idStr)
-    // console.log(sample_values)
-
     console.log(filteredSamples)
 
     var trace1 = {
@@ -117,12 +113,11 @@ function buildBubble(){
     var data = [trace1];
     
     var layout = {
-      // title: 'Marker Size and Color',
       showlegend: false,
        height: 600,
        width: 900,
        font: {
-        size: 18,
+        // size: 18,
         color: 'black'
       },
       xaxis: {
@@ -155,7 +150,6 @@ function buildDemographics(){
     metadata=data.metadata
 
     filteredMetadata= metadata.filter(row=>row.id==dropdownMenuValue)[0]
-    console.log(filteredMetadata)
 
     Object.entries(filteredMetadata).forEach(([key, value])=>{
       var p= panel.append("p")
